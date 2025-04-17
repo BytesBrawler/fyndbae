@@ -2,10 +2,12 @@ export default function PrivacyPage() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">Privacy Policy</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-app-text-primary">
+          Privacy <span className="text-app-primary">Policy</span>
+        </h1>
 
-        <div className="bg-white rounded-lg shadow-sm p-6 md:p-8">
-          <div className="prose max-w-none">
+        <div className="glass-card rounded-lg p-6 md:p-8">
+          <div className="prose max-w-none prose-invert prose-headings:text-app-primary prose-p:text-app-text-secondary prose-strong:text-app-primary">
             <h2 className="text-2xl font-semibold mt-6 mb-4">1. Introduction</h2>
             <p>
               Welcome to <strong>FyndBae</strong>! Your privacy is important to us. This Privacy Policy explains how we
@@ -15,7 +17,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-2xl font-semibold mt-6 mb-4">2. Information We Collect</h2>
             <h3 className="text-xl font-medium mt-4 mb-2">a) Information You Provide</h3>
-            <ul className="list-disc pl-6 mb-4">
+            <ul className="list-disc pl-6 mb-4 text-app-text-secondary">
               <li>
                 <strong>Account Information</strong>: Name, email, phone number, gender, date of birth, and profile
                 details (such as photos, bio, and interests).
@@ -30,7 +32,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h3 className="text-xl font-medium mt-4 mb-2">b) Information We Collect Automatically</h3>
-            <ul className="list-disc pl-6 mb-4">
+            <ul className="list-disc pl-6 mb-4 text-app-text-secondary">
               <li>
                 <strong>Device Information</strong>: IP address, device type, operating system, and app usage data.
               </li>
@@ -46,7 +48,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-2xl font-semibold mt-6 mb-4">3. How We Use Your Information</h2>
             <p>We use your information to:</p>
-            <ul className="list-disc pl-6 mb-4">
+            <ul className="list-disc pl-6 mb-4 text-app-text-secondary">
               <li>
                 Provide and improve the <strong>FyndBae</strong> experience.
               </li>
@@ -59,7 +61,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-2xl font-semibold mt-6 mb-4">4. How We Share Your Information</h2>
             <p>We do not sell your personal data. However, we may share it in the following cases:</p>
-            <ul className="list-disc pl-6 mb-4">
+            <ul className="list-disc pl-6 mb-4 text-app-text-secondary">
               <li>
                 <strong>With Other Users</strong>: Limited profile details are visible to other users (e.g., name, age,
                 photos).
@@ -75,7 +77,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h2 className="text-2xl font-semibold mt-6 mb-4">5. Your Privacy Controls</h2>
-            <ul className="list-disc pl-6 mb-4">
+            <ul className="list-disc pl-6 mb-4 text-app-text-secondary">
               <li>
                 <strong>Profile Settings</strong>: You can edit or delete your profile at any time.
               </li>

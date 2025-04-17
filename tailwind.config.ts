@@ -77,30 +77,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        glow: {
-          '0%, 100%': { 
-            textShadow: '0 0 5px #FF007F, 0 0 15px #FF007F, 0 0 20px #FF007F'
-          },
-          '50%': { 
-            textShadow: '0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 30px #FF007F'
-          },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "glow": "glow 2s ease-in-out infinite",
       },
       boxShadow: {
-        'neon': '0 0 5px #FF007F, 0 0 10px #FF007F',
-        'neon-lg': '0 0 10px #FF007F, 0 0 20px #FF007F',
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        neon: "0 0 5px rgba(255, 0, 127, 0.3)",
+        glass: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(to right bottom, #FF007F, #FF007F)',
-        'gradient-button': 'linear-gradient(to left bottom, #FF007F, #FF007F)',
-        'gradient-card': 'linear-gradient(to right bottom, #241733, #322047)',
-      }
+        "gradient-primary": "linear-gradient(to right bottom, #FF007F, #FF007F)",
+        "gradient-button": "linear-gradient(to left bottom, #FF007F, #FF007F)",
+        "gradient-card": "linear-gradient(to right bottom, #241733, #322047)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

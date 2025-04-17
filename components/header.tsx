@@ -17,7 +17,7 @@ export default function Header() {
             <div className="relative w-10 h-10">
               <Image src="/logo3.png" alt="FyndBae Logo" fill className="object-contain" />
             </div>
-            <span className="text-xl font-bold text-app-primary neon-text">FyndBae</span>
+            <span className="text-xl font-bold text-app-primary">FyndBae</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -28,24 +28,31 @@ export default function Header() {
             <Link href="/about" className="text-app-text-primary hover:text-app-primary font-medium transition-colors">
               About
             </Link>
-            <Link href="/features" className="text-app-text-primary hover:text-app-primary font-medium transition-colors">
+            <Link
+              href="/features"
+              className="text-app-text-primary hover:text-app-primary font-medium transition-colors"
+            >
               Features
             </Link>
-            <Link href="/contact" className="text-app-text-primary hover:text-app-primary font-medium transition-colors">
+            <Link
+              href="/contact"
+              className="text-app-text-primary hover:text-app-primary font-medium transition-colors"
+            >
               Contact
             </Link>
             <Link href="/terms" className="text-app-text-primary hover:text-app-primary font-medium transition-colors">
               Terms
             </Link>
-            <Link href="/privacy" className="text-app-text-primary hover:text-app-primary font-medium transition-colors">
+            <Link
+              href="/privacy"
+              className="text-app-text-primary hover:text-app-primary font-medium transition-colors"
+            >
               Privacy
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button className="bg-app-primary hover:bg-app-primary/80 text-white shadow-neon">
-              Download App
-            </Button>
+            <Button className="bg-app-primary hover:bg-app-primary/80 text-white">Download App</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,9 +111,7 @@ export default function Header() {
             >
               Privacy
             </Link>
-            <Button className="bg-app-primary hover:bg-app-primary/80 text-white shadow-neon w-full">
-              Download App
-            </Button>
+            <Button className="bg-app-primary hover:bg-app-primary/80 text-white w-full">Download App</Button>
           </div>
         </div>
       )}

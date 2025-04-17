@@ -53,6 +53,15 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom Flutter app colors
+        "app-primary": "#FF007F", // Neon Magenta
+        "app-secondary": "#FF4500", // Fiery Orange
+        "app-accent": "#FFD700", // Rich Gold
+        "app-background": "#1A1325", // Deep Purple-Black
+        "app-card": "#241733", // Rich Dark Violet
+        "app-surface": "#322047", // Elegant Dark Purple
+        "app-text-primary": "#EDE3F5", // Soft Lavender White
+        "app-text-secondary": "#B8A5D6", // Faded Lilac
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,11 +77,30 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        glow: {
+          '0%, 100%': { 
+            textShadow: '0 0 5px #FF007F, 0 0 15px #FF007F, 0 0 20px #FF007F'
+          },
+          '50%': { 
+            textShadow: '0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 30px #FF007F'
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glow": "glow 2s ease-in-out infinite",
       },
+      boxShadow: {
+        'neon': '0 0 5px #FF007F, 0 0 10px #FF007F',
+        'neon-lg': '0 0 10px #FF007F, 0 0 20px #FF007F',
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(to right bottom, #FF007F, #FF007F)',
+        'gradient-button': 'linear-gradient(to left bottom, #FF007F, #FF007F)',
+        'gradient-card': 'linear-gradient(to right bottom, #241733, #322047)',
+      }
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Heart, Search, Users, Shield, MessageCircle } from "lucide-react"
+import { Heart, Search, Users, Shield, MessageCircle } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -11,17 +11,17 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex flex-col space-y-4 text-center md:text-left md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-app-text-primary">
-                Find Your Perfect Match with <span className="text-app-primary neon-text">FyndBae</span>
+                Find Your Perfect Match with <span className="text-app-primary">FyndBae</span>
               </h1>
               <p className="text-lg text-app-text-secondary md:text-xl">
                 Connect with like-minded individuals and discover meaningful relationships in a safe and friendly
                 environment.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                <Button className="bg-app-primary hover:bg-app-primary/80 text-white shadow-neon">Download Now</Button>
+                <Button className="bg-app-primary hover:bg-app-primary/80 text-white">Download Now</Button>
                 <Button
                   variant="outline"
-                  className="border-app-primary text-app-primary hover:bg-app-primary/10 neon-border"
+                  className="border-app-primary text-app-primary hover:bg-app-primary/10"
                 >
                   Learn More
                 </Button>
@@ -129,13 +129,13 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-b from-app-primary to-app-primary/70 text-white">
+      <section className="py-16 bg-app-primary text-white">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect Match?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of singles who have found meaningful connections on FyndBae.
           </p>
-          <Button className="bg-white text-app-primary hover:bg-gray-100 shadow-neon-lg">Download FyndBae Today</Button>
+          <Button className="bg-white text-app-primary hover:bg-gray-100">Download FyndBae Today</Button>
         </div>
       </section>
     </div>

@@ -6,20 +6,23 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-20 bg-gradient-to-b from-app-primary/20 to-app-background">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex flex-col space-y-4 text-center md:text-left md:w-1/2">
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900">
-                Find Your Perfect Match with <span className="text-red-500">FyndBae</span>
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-app-text-primary">
+                Find Your Perfect Match with <span className="text-app-primary neon-text">FyndBae</span>
               </h1>
-              <p className="text-lg text-gray-600 md:text-xl">
+              <p className="text-lg text-app-text-secondary md:text-xl">
                 Connect with like-minded individuals and discover meaningful relationships in a safe and friendly
                 environment.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                <Button className="bg-red-500 hover:bg-red-600 text-white">Download Now</Button>
-                <Button variant="outline" className="border-red-500 text-red-500 hover:bg-red-50">
+                <Button className="bg-app-primary hover:bg-app-primary/80 text-white shadow-neon">Download Now</Button>
+                <Button
+                  variant="outline"
+                  className="border-app-primary text-app-primary hover:bg-app-primary/10 neon-border"
+                >
                   Learn More
                 </Button>
               </div>
@@ -34,86 +37,90 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-app-background">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Why Choose FyndBae?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-app-text-primary">
+            Why Choose <span className="text-app-primary">FyndBae</span>?
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="bg-red-100 p-3 rounded-full mb-4">
-                <Search className="h-8 w-8 text-red-500" />
+            <div className="glass-card flex flex-col items-center text-center p-6 rounded-lg">
+              <div className="bg-app-primary/20 p-3 rounded-full mb-4">
+                <Search className="h-8 w-8 text-app-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Smart Matching</h3>
-              <p className="text-gray-600">Our advanced algorithm finds the most compatible matches for you.</p>
+              <h3 className="text-xl font-semibold mb-2 text-app-primary">Smart Matching</h3>
+              <p className="text-app-text-secondary">
+                Our advanced algorithm finds the most compatible matches for you.
+              </p>
             </div>
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="bg-red-100 p-3 rounded-full mb-4">
-                <Users className="h-8 w-8 text-red-500" />
+            <div className="glass-card flex flex-col items-center text-center p-6 rounded-lg">
+              <div className="bg-app-primary/20 p-3 rounded-full mb-4">
+                <Users className="h-8 w-8 text-app-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Verified Profiles</h3>
-              <p className="text-gray-600">All profiles are verified to ensure you're meeting real people.</p>
+              <h3 className="text-xl font-semibold mb-2 text-app-primary">Verified Profiles</h3>
+              <p className="text-app-text-secondary">All profiles are verified to ensure you're meeting real people.</p>
             </div>
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="bg-red-100 p-3 rounded-full mb-4">
-                <Shield className="h-8 w-8 text-red-500" />
+            <div className="glass-card flex flex-col items-center text-center p-6 rounded-lg">
+              <div className="bg-app-primary/20 p-3 rounded-full mb-4">
+                <Shield className="h-8 w-8 text-app-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Safe & Secure</h3>
-              <p className="text-gray-600">Your privacy and security are our top priorities.</p>
+              <h3 className="text-xl font-semibold mb-2 text-app-primary">Safe & Secure</h3>
+              <p className="text-app-text-secondary">Your privacy and security are our top priorities.</p>
             </div>
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="bg-red-100 p-3 rounded-full mb-4">
-                <MessageCircle className="h-8 w-8 text-red-500" />
+            <div className="glass-card flex flex-col items-center text-center p-6 rounded-lg">
+              <div className="bg-app-primary/20 p-3 rounded-full mb-4">
+                <MessageCircle className="h-8 w-8 text-app-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Easy Communication</h3>
-              <p className="text-gray-600">Chat, and connect with your matches seamlessly.</p>
+              <h3 className="text-xl font-semibold mb-2 text-app-primary">Easy Communication</h3>
+              <p className="text-app-text-secondary">Chat, and connect with your matches seamlessly.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-app-card/30">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Success Stories</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-app-text-primary">Success Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-6 w-6 text-red-500" />
+                <div className="w-12 h-12 bg-app-primary/20 rounded-full flex items-center justify-center">
+                  <Heart className="h-6 w-6 text-app-primary" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="font-semibold">Rahul & Priya</h3>
-                  <p className="text-sm text-gray-500">Matched 8 months ago</p>
+                  <h3 className="font-semibold text-app-text-primary">Rahul & Priya</h3>
+                  <p className="text-sm text-app-text-secondary">Matched 8 months ago</p>
                 </div>
               </div>
-              <p className="text-gray-600">
+              <p className="text-app-text-secondary">
                 "FyndBae helped us find each other when we least expected it. We're now planning our wedding!"
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-6 w-6 text-red-500" />
+                <div className="w-12 h-12 bg-app-primary/20 rounded-full flex items-center justify-center">
+                  <Heart className="h-6 w-6 text-app-primary" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="font-semibold">Amit & Neha</h3>
-                  <p className="text-sm text-gray-500">Matched 1 year ago</p>
+                  <h3 className="font-semibold text-app-text-primary">Amit & Neha</h3>
+                  <p className="text-sm text-app-text-secondary">Matched 1 year ago</p>
                 </div>
               </div>
-              <p className="text-gray-600">
+              <p className="text-app-text-secondary">
                 "The matching algorithm is incredible! We have so much in common and would never have met otherwise."
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-6 w-6 text-red-500" />
+                <div className="w-12 h-12 bg-app-primary/20 rounded-full flex items-center justify-center">
+                  <Heart className="h-6 w-6 text-app-primary" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="font-semibold">Vikram & Meera</h3>
-                  <p className="text-sm text-gray-500">Matched 6 months ago</p>
+                  <h3 className="font-semibold text-app-text-primary">Vikram & Meera</h3>
+                  <p className="text-sm text-app-text-secondary">Matched 6 months ago</p>
                 </div>
               </div>
-              <p className="text-gray-600">
+              <p className="text-app-text-secondary">
                 "After trying several dating apps, FyndBae was the only one that helped me find a genuine connection."
               </p>
             </div>
@@ -122,13 +129,13 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-red-500 text-white">
+      <section className="py-16 bg-gradient-to-b from-app-primary to-app-primary/70 text-white">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect Match?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of singles who have found meaningful connections on FyndBae.
           </p>
-          <Button className="bg-white text-red-500 hover:bg-gray-100">Download FyndBae Today</Button>
+          <Button className="bg-white text-app-primary hover:bg-gray-100 shadow-neon-lg">Download FyndBae Today</Button>
         </div>
       </section>
     </div>
